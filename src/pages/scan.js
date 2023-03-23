@@ -1,8 +1,15 @@
+import DefaultLayout from '@/components/DefaultLayout/DefaultLayout'
 import React from 'react'
 
 const scan = () => {
   return (
-    <div>scan</div>
+    <>
+        <DefaultLayout>
+            <div className="w-full h-screen scanPage-bg">
+
+            </div>
+        </DefaultLayout>
+    </>
   )
 }
 

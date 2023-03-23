@@ -1,8 +1,15 @@
+import DefaultLayout from '@/components/DefaultLayout/DefaultLayout'
 import React from 'react'
 
 const history = () => {
   return (
-    <div>history</div>
+    <>
+        <DefaultLayout>
+            <div className="w-full h-screen historyPage-bg">
+
+            </div>
+        </DefaultLayout>
+    </>
   )
 }
 
