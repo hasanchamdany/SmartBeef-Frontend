@@ -11,7 +11,23 @@ export default function Home() {
     <>
       <DefaultLayout>
         <div className="w-full h-screen landingPage-bg">
+          <div>
+            {/* image */}
+            <div>
 
+            </div>
+            {/* heading */}
+            <div>
+              {/* title */}
+              <h1>
+
+              </h1>
+              {/* button  */}
+              <button>
+
+              </button>
+            </div>
+          </div>
         </div>
       </DefaultLayout>
     </>
