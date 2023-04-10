@@ -16,14 +16,17 @@ module.exports = {
           medium: "#219ebc",
           light: "#8ecae6",
           dark: "#023047",
+          welcome:"#96CAE7"
           // nav: "#315FB1",
         },
         orange: "#fb8500",
+        scan: "#FFDE84",
         "c-yellow": "#ffb703",
       },
 
       yellow: {
         dark: "#E8AF30",
+       
       },
       cream: {
         pale: "#E7E6DD",

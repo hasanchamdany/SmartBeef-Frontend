@@ -14,7 +14,9 @@ export default function DefaultLayout({
       </Head>
       <Navbar />
       <div className="w-screen max-w-full overflow-x-hidden">
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
         {/* <Footer /> */}
       </div>
     </div>
