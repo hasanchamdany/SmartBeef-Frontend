@@ -1,3 +1,10 @@
+import mongoose from "mongoose";
+
+const MONGODB_URL = process.env
+
+
+
+
 // import User from "../models/Member.js"
 // import bcrypt from "bcryptjs"
 // import { createError } from "../utils/error.js"
