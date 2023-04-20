@@ -11,8 +11,6 @@ const handler = async (req, res) => {
     // const client = await clientPromise
     console.log("connect to MongoDB")
     
-    
-    console.log("mongo URL = ", MONGODB_URL)
 
     if(req.method === "POST"){
         if(!req.body) return res.status(400).json({error: "Data is Missing"})
@@ -46,34 +44,7 @@ const handler = async (req, res) => {
             }catch(error){
                 console.error("Error creating user", error)
             }
-            // await User.create({
-            //     fullName,
-            //     email,
-            //     password: hashedPassword 
-            // }, (error, data) => {
-            //     if(error && error instanceof mongoose.Error.ValidationError){
-            //         for(let field in error.erros){
-            //             const msg = error.errors[field].message
-            //             return res.status(409).json({error: msg})
-            //         }
-            //     }
-
-            //     const user = {
-            //         email: data.email,
-            //         fullName: data.fullName,
-            //         _id: data._id
-            //     }
-
-            //     res.status(201).json({
-            //         success: true,
-            //         user
-            //     })
-            // })
-
-            // return res.status(201).json({
-            //     success: true,
-            //     user
-            // })
+           
         }
 
     }else{
