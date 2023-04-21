@@ -25,7 +25,7 @@ const handler = async (req, res) => {
             if(password.length < 6) return res.status(409).json({error: "Password too short, should be 6 characters long"})
 
             const hashedPassword = await hash(password, 12)
-            console.log("CP sblm user create")
+            // console.log("CP sblm user create")
             try{
                 const user = await User.create({
                     fullName: req.body.fullName,
