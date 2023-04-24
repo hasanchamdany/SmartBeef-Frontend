@@ -64,20 +64,23 @@ const Navbar = () => {
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                   <li className="text-black">
                     <Link href="/scan">
-                      <div className="font-poppins font-semibold ">
-                        Predict
-                      </div>
+                      <div className="font-poppins font-semibold ">Predict</div>
                     </Link>
                   </li>
                   <li className="text-black">
-                  <Link href="/history">
-                    <div className="font-poppins font-semibold ">History</div>
-                  </Link>
-                </li>
+                    <Link href="/history">
+                      <div className="font-poppins font-semibold ">History</div>
+                    </Link>
+                  </li>
                   <li className="text-black">
                     <Link href="/profile">
-                      <div className="font-poppins font-semibold ">
-                        Profile
+                      <div className="font-poppins font-semibold ">Profile</div>
+                    </Link>
+                  </li>
+                  <li className="text-black">
+                    <Link href="/signin">
+                      <div className="font-poppins font-semibold bg-blue-medium hover:bg-blue-pale py-1 px-3 rounded-xl text-white">
+                        Sign-In
                       </div>
                     </Link>
                   </li>
