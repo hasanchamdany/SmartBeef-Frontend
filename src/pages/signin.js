@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const signin = () => {
   return (
@@ -22,9 +23,12 @@ const signin = () => {
             type="password"
             className="block bg-white py-2 px-4 border-2 border-blue-medium rounded-xl mb-4"
           ></input>
-          <button className="bg-blue-pale py-2 px-4 font-poppins font-bold text-white rounded-lg mr-8">
-            Sign-Up
-          </button>
+          <Link href="/signup">
+            <button className="bg-blue-pale py-2 px-4 font-poppins font-bold text-white rounded-lg mr-8">
+              Sign-Up
+            </button>
+          </Link>
+
           <button className="bg-blue-medium py-2 px-4 font-poppins font-bold text-white rounded-lg">
             Sign-In
           </button>
