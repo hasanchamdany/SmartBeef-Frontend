@@ -23,21 +23,21 @@ const signin = () => {
             type="password"
             className="block bg-white py-2 px-4 border-2 border-blue-medium rounded-xl mb-4"
           ></input>
+          <div className="my-4 flex justify-center">
+            <button className="border-2 border-blue-pale hover:bg-blue-pale hover:text-white py-2 px-6 rounded-2xl ">
+              Sign-In With Google
+            </button>
+          </div>
           <Link href="/signup">
-            <button className="bg-blue-pale py-2 px-4 font-poppins font-bold text-white rounded-lg mr-8">
+            <button className="bg-blue-pale py-2 px-4 font-poppins font-bold text-white rounded-lg mr-8 hover:bg-white hover:text-blue-pale border-2 border-white hover:border-blue-medium">
               Sign-Up
             </button>
           </Link>
 
-          <button className="bg-blue-medium py-2 px-4 font-poppins font-bold text-white rounded-lg">
+          <button className="bg-blue-medium py-2 px-4 font-poppins font-bold text-white rounded-lg hover:bg-white hover:text-blue-pale border-2 border-white hover:border-blue-medium">
             Sign-In
           </button>
         </form>
-        <div className="mt-2 flex justify-center">
-          <button className="border-2 border-blue-pale py-2 px-6 rounded-2xl ">
-            Sign-In With Google
-          </button>
-        </div>
       </div>
     </div>
   );
