@@ -64,35 +64,33 @@ const Navbar = () => {
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                   <li className="text-black">
                     <Link href="/scan">
-                      <div className="font-poppins font-semibold ">Predict</div>
+                      <div className="font-poppins font-semibold hover:text-blue-medium">Predict</div>
                     </Link>
                   </li>
                   <li className="text-black">
                     <Link href="/history">
-                      <div className="font-poppins font-semibold ">History</div>
+                      <div className="font-poppins font-semibold hover:text-blue-medium">History</div>
                     </Link>
                   </li>
                   <li className="text-black">
                     <Link href="/profile">
-                      <div className="font-poppins font-semibold ">Profile</div>
+                      <div className="font-poppins font-semibold hover:text-blue-medium">Profile</div>
                     </Link>
                   </li>
                   <li className="text-black">
                     <div className="flex">
-                    <Link href="/signin">
-                      <div className="font-poppins font-semibold bg-blue-medium hover:bg-white hover:text-blue-pale border-2 hover:border-blue-medium py-1 px-3 rounded-xl text-white mr-2">
-                        Sign-In 
-                      </div>
-                    </Link>
-                    <Link href="/signup">
-                      <div className="font-poppins font-semibold bg-blue-pale hover:bg-white hover:text-blue-pale border-2 hover:border-blue-medium py-1 px-3 rounded-xl text-white">
-                        Sign-Up 
-                      </div>
-                    </Link>
+                      <Link href="/signin">
+                        <div className="font-poppins font-semibold bg-blue-medium hover:bg-white hover:text-blue-pale border-2 hover:border-blue-medium py-1 px-3 rounded-xl text-white mr-2">
+                          Sign-In
+                        </div>
+                      </Link>
+                      <Link href="/signup">
+                        <div className="font-poppins font-semibold bg-blue-pale hover:bg-white hover:text-blue-pale border-2 hover:border-blue-medium py-1 px-3 rounded-xl text-white">
+                          Sign-Up
+                        </div>
+                      </Link>
                     </div>
-                    
                   </li>
-                  
                 </ul>
               </div>
             </div>
