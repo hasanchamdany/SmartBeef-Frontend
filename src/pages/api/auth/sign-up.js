@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import {hash} from "bcryptjs"
+import mongoose from 'mongoose';
 import { connectToMongoDB } from "@/lib/mongodb"
 // import clientPromise from "@/lib/mongodb";
 import User from "@/models/user"
@@ -25,14 +26,17 @@ const handler = async (req, res) => {
             if(password.length < 6) return res.status(409).json({error: "Password too short, should be 6 characters long"})
 
             const hashedPassword = await hash(password, 12)
-            // console.log("CP sblm user create")
+            
             try{
+                
                 const user = await User.create({
                     fullName: req.body.fullName,
                     email: req.body.email,
                     password: hashedPassword
                 }, (error, data) => {
+                    
                     if(error && error instanceof mongoose.Error.ValidationError){
+                        
                         for(let field in error.errors){
                             const msg = error.errors[field].message
                             return res.status(409).json({error: msg})
