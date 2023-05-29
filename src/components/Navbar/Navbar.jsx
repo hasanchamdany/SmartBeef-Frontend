@@ -83,13 +83,13 @@ const Navbar = () => {
                         </div>
                       </Link>
                     </li>
-                    <li className="text-black">
+                    {/* <li className="text-black">
                       <Link href="/profile">
                         <div className="font-poppins font-semibold hover:text-blue-medium">
                           Profile
                         </div>
                       </Link>
-                    </li>
+                    </li> */}
                     <li className="text-black">
                       <div className="flex">
                         <button
@@ -181,13 +181,13 @@ const Navbar = () => {
                       </div>
                     </Link>
                   </li>
-                  <li className="text-black">
+                  {/* <li className="text-black">
                     <Link href="/profile">
                       <div className="font-poppins font-semibold hover:text-blue-medium">
                         Profile
                       </div>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="text-black">
                     <div className="flex">
                       <Link href="/signin">
@@ -195,11 +195,11 @@ const Navbar = () => {
                           Sign-In
                         </div>
                       </Link>
-                      <Link href="/signup">
+                      {/* <Link href="/signup">
                         <div className="font-poppins font-semibold bg-blue-pale hover:bg-white hover:text-blue-pale border-2 hover:border-blue-medium py-1 px-3 rounded-xl text-white">
                           Sign-Up
                         </div>
-                      </Link>
+                      </Link> */}
                     </div>
                   </li>
                 </ul>
