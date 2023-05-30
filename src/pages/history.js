@@ -2,6 +2,7 @@ import DefaultLayout from "@/components/DefaultLayout/DefaultLayout";
 import React from "react";
 import HistoryCard from "@/components/Card/HistoryCard";
 
+
 const history = () => {
   
   return (
