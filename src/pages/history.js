@@ -14,7 +14,7 @@ const history = () => {
               </h1>
             </div>
             <div className="flex justify-center">
-              <div className=" bg-white w-3/4 h-3/4">
+              <div className=" bg-white w-3/4 h-3/4 ">
                 <HistoryCard />
               </div>
             </div>
