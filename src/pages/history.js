@@ -3,6 +3,7 @@ import React from "react";
 import HistoryCard from "@/components/Card/HistoryCard";
 
 const history = () => {
+  
   return (
     <>
       <DefaultLayout>
@@ -14,8 +15,12 @@ const history = () => {
               </h1>
             </div>
             <div className="flex justify-center">
-              <div className=" bg-white w-3/4 h-3/4 ">
+              <div className=" bg-white rounded-xl w-3/4 h-auto">
                 <HistoryCard />
+                <HistoryCard />
+                <HistoryCard />
+                <HistoryCard />
+
               </div>
             </div>
           </div>
