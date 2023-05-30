@@ -5,7 +5,9 @@ import Scan from "../components/Scan"
 import bannerScan from '../../public/images/SmartBeef banner scan.png'
 import UpFileContainer from '@/components/Container/UpFileContainer'
 
+
 const scan = () => {
+  // const navigate = useNavigate();
   return (
     <>
         <DefaultLayout>

@@ -10,7 +10,8 @@ const Navbar = () => {
 
   if (session) {
     const user = session.user;
-    console.log(user);
+    console.log("ini session.user")
+    console.log(user.email);
     return (
       <>
         <div className="flex justify-center mx-10  ">
