@@ -5,6 +5,7 @@ import axios from "axios";
 
 const UpFileContainer = () => {
   const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState(null);
   const router = useRouter();
   const { data: session } = useSession();
   useEffect(() => {
@@ -59,6 +60,7 @@ const UpFileContainer = () => {
       .then(function (response) {
         //handle success
         console.log(response);
+        setResult(response.data.prediction);
         setLoading(false);
       })
       .catch(function (response) {
@@ -68,7 +70,7 @@ const UpFileContainer = () => {
     // console.log(file);
   };
 
-  const [result, setResult] = useState(null);
+  
 
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
