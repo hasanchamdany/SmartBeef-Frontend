@@ -1,7 +1,8 @@
 import DefaultLayout from "@/components/DefaultLayout/DefaultLayout";
 import React from "react";
 import HistoryCard from "@/components/Card/HistoryCard";
-
+import axios from "axios";
+import HistoryContainer from "@/components/Container/HistoryContainer";
 
 const history = () => {
   
@@ -17,11 +18,7 @@ const history = () => {
             </div>
             <div className="flex justify-center">
               <div className=" bg-white rounded-xl w-3/4 h-auto">
-                <HistoryCard />
-                <HistoryCard />
-                <HistoryCard />
-                <HistoryCard />
-
+                <HistoryContainer/>
               </div>
             </div>
           </div>

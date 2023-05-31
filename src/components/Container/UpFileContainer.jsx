@@ -26,13 +26,16 @@ const UpFileContainer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    var date = new Date().toLocaleString();
     var bodyFormData = new FormData();
     console.log("file = ");
     console.log(file);
     // console.log("session usernya = ");
     // console.log(session.user.email);
+
     bodyFormData.append("file", file, file.name);
     bodyFormData.append("email", session.user.email);
+    bodyFormData.append("date", date);
     console.log(bodyFormData);
 
     // ---------cek isi bodyFormData------------------
