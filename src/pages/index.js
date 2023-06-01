@@ -22,7 +22,7 @@ export default function Home() {
                 </h1>
                 <Link href="/scan" className="flex justify-center">
                   <button
-                    class="rounded-full bg-white text-blue-dark hover:bg-blue-medium hover:text-white text-xl font-bold h-12 w-1/4 mt-8 "
+                    class="rounded-full bg-white text-blue-dark hover:bg-blue-medium hover:text-white md:text-xl text-md font-bold md:h-12 h-10 md:w-1/4 w-1/2 mt-8 "
                     href="/scan"
                   >
                     Scan Now!
