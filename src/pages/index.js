@@ -17,7 +17,7 @@ export default function Home() {
             {/* image */}
             <div className="lg:flex block justify-between 2xl:mt-48 mt-44  mx-8">
               <div className="flex flex-col align-center justify-center">
-                <h1 className="font-serif-inter 2xl:text-8xl text-7xl text-blue-welcome max-w-xl lg:ml-32 ml-8">
+                <h1 className="font-serif-inter 2xl:text-8xl text-7xl text-blue-welcome max-w-xl lg:ml-32 md:ml-8 ml-3">
                   Welcome to Smart Beef
                 </h1>
                 <Link href="/scan" className="flex justify-center">
