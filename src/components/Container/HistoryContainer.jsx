@@ -42,16 +42,16 @@ const HistoryContainer = () => {
   console.log(history);
   return (
     <>
-      {history?.map((e)=>{
-        return(
-            <HistoryCard 
+      {history?.map((e) => {
+        return (
+          <HistoryCard
             key={e._id}
             email={e.email}
             url={e.url}
             pred={e.prediction}
             date={e.date}
-            />
-        )
+          />
+        );
       })}
     </>
   );
