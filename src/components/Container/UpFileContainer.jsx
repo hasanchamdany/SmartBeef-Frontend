@@ -49,12 +49,6 @@ const UpFileContainer = () => {
       },
       mode: "no-cors",
     })
-      // axios.post('http://127.0.0.1:5000/predict', bodyFormData, {
-      //   headers: {
-      //     "Content-Type": "multipart/form-data",
-      //     'Access-Control-Allow-Origin': '*',
-      //   }
-      // })
       .then(function (response) {
         //handle success
         console.log(response);
