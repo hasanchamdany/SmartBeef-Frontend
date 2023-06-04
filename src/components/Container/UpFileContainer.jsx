@@ -46,7 +46,7 @@ const UpFileContainer = () => {
     setLoading(true);
     axios({
       method: "post",
-      url: "http://127.0.0.1:5000/predict",
+      url: "http://smartbeef.eastus.cloudapp.azure.com:5000/predict",
       data: bodyFormData,
       headers: {
         "Content-Type": "multipart/form-data",
