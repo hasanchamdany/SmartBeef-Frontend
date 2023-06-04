@@ -38,11 +38,6 @@ const UpFileContainer = () => {
     bodyFormData.append("date", date);
     console.log(bodyFormData);
 
-    // ---------cek isi bodyFormData------------------
-    // const formDataString = Array.from(bodyFormData)
-    //   .map(([name, value]) => `${name}: ${value}`)
-    //   .join("\n");
-    // console.log(formDataString);
     setLoading(true);
     axios({
       method: "post",
